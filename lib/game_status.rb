@@ -24,3 +24,7 @@ end
 def full? (board)
   board.all? {|check| position_taken?(board,check)}
 end
+
+def draw? (board)
+
+end
