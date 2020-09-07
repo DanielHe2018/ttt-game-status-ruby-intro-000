@@ -22,7 +22,7 @@ def won? (board)
 end
 
 def full? (board)
-  board.all? {|check| position_taken?(board,check)}
+  board.all? {|check| check!=" "}
 end
 
 def draw? (board)
