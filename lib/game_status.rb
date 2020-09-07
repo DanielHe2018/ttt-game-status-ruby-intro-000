@@ -17,6 +17,6 @@ WIN_COMBINATIONS =[
 
 def won? (board)
   WIN_COMBINATIONS.detect do |check|
-    !position_taken?(board,check[0]) && board[check[0]]==board[check[1]] && board[check[1]]==board[check[2]]
+    position_taken?(board,check[0]) && board[check[0]]==board[check[1]] && board[check[1]]==board[check[2]]
   end
 end
