@@ -20,3 +20,7 @@ def won? (board)
     position_taken?(board,check[0]) && board[check[0]]==board[check[1]] && board[check[1]]==board[check[2]]
   end
 end
+
+def full? (board)
+  board.all? {|check| position_taken?(board,check)}
+end
